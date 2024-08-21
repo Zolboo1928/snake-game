@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    min-height: 100vh;
+     display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: 10s;
+}
+.container1{
+    color: white;
+font-size: 30px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    width: 500px;
+    background-color:#293447 ;
+}
+.menu{
+    height: 60px;
+    width: 500px;
+    background-color: #293447;
+padding: 10px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.gameAction{
+    display: grid;
+    grid-template: repeat(30,1fr) / repeat(30,1fr);
+    height: 500px;
+    width: 500px;
+    background-color:#212837;
+}
+.food{
+    background-color: red;
+    z-index: 2;
+}
+.gameAction .head{
+    background-color: #60cbff;
+    z-index: 1;
+}
+.score-area{
+    display: flex;
+}
+.joyStick{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.joyStick .right{
+    rotate: 90deg;
+    width: 75px;
+    height: 75px;
+}
+.joyStick .down{
+    rotate: 180deg;
+     width: 75px;
+    height: 75px;
+}
+.joyStick .left{
+    rotate: 270deg;
+     width: 75px;
+    height: 75px;
+}
+.joyStick .up{
+     width: 75px;
+    height: 75px;
+}
+.joyStick .upArea{
+    text-align: center;
+}
+.joyStick .leftNRight{
+    display: flex;
+    gap: 70px;
+}
+.joyStick .downArea{
+    text-align: center;
+}
+.highScoreArea{
+    display: flex;
+}
+.container2 .input{
+    width: 75px;
+    font-size: 30px;
+    text-align: center;
+}
+.container2 .section{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    font-size: 35px;
+    margin-top: 150px;
+    color:#293447;
+}
+#checkbox{
+    width: 50px;
+}
+@media only screen and (max-width:430px) {
+    .board{
+        width: 430px;
+    }
+    .menu{
+        width: 430px;
+    }
+    .gameAction{
+        width: 430px;
+        height: 430px;
+    }
+    .container1{
+        justify-content: flex-start;
+    }
+}

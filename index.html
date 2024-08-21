@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./root.css" />
+  </head>
+  <body>
+    <div class="container1">
+      <div class="board">
+      <div class="menu">
+        <div class="score-area">
+          <p>Score:</p>
+          <p id="score-counter-num">0</p>
+        </div>
+        <div class="highScoreArea">
+          <p>High-score:</p>
+          <p id="highScore">0</p>
+        </div>
+      </div>
+      <div class="gameAction"></div>
+    </div>
+    <div class="joyStick">
+      <div class="upArea">
+        <img
+          class="up"
+          src="curved-white-arrow-png-0.png"
+          alt=""
+        />
+      </div>
+      <div class="leftNRight">
+        <img
+          class="left"
+          src="curved-white-arrow-png-0.png"
+          alt=""
+        />
+        <img
+          class="right"
+          src="curved-white-arrow-png-0.png"
+          alt=""
+        />
+      </div>
+      <div class="downArea">
+        <img
+          class="down"
+          src="curved-white-arrow-png-0.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="section">
+      <p>Speed</p>
+      <input type="number" class="input" id="setSpeed" value="200">
+    </div>
+    <!-- <div class="section">
+      <p>No wall</p>
+      <input type="checkbox" id="checkbox">
+    </div> -->
+  </div>
+  <script src="./index.js"></script>
+  </body>
+</html>
